@@ -12,9 +12,9 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-neutral-900">Resources</h4>
             <ul className="mt-2 space-y-2 text-sm text-neutral-600">
-              <li><a className="hover:text-neutral-900" href="#features">Features</a></li>
-              <li><a className="hover:text-neutral-900" href="#how">How it works</a></li>
-              <li><a className="hover:text-neutral-900" href="#faq">FAQs</a></li>
+              <li><a className="hover:text-neutral-900" href="#request">Request Blood</a></li>
+              <li><a className="hover:text-neutral-900" href="#contact">Contact</a></li>
+              <li><a className="hover:text-neutral-900" href="#privacy">Privacy</a></li>
             </ul>
           </div>
           <div>

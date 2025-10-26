@@ -1,8 +1,8 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Features from "./components/Features";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import RequestBlood from "./components/RequestBlood";
 
 function App() {
   return (
@@ -10,44 +10,12 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <HowItWorks />
-        <Features />
+        <RequestBlood />
         <Contact />
         <CTA />
       </main>
       <Footer />
     </div>
-  );
-}
-
-function Step({ number, title, desc }) {
-  return (
-    <div className="relative rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm">
-      <div className="absolute -top-3 left-6 inline-flex h-6 min-w-[1.5rem] items-center justify-center rounded-full bg-rose-600 px-2 text-xs font-semibold text-white">
-        {number}
-      </div>
-      <h3 className="mt-2 text-lg font-semibold text-neutral-900">{title}</h3>
-      <p className="mt-1 text-sm text-neutral-600">{desc}</p>
-    </div>
-  );
-}
-
-function HowItWorks() {
-  return (
-    <section id="how" className="bg-neutral-50">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl">How it works</h2>
-          <p className="mt-3 text-neutral-600">Create requests, match donors, and save lives — in minutes.</p>
-        </div>
-        <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <Step number="1" title="Create account" desc="Sign up as donor or recipient and verify your email." />
-          <Step number="2" title="Set your profile" desc="Add blood group, location, and availability." />
-          <Step number="3" title="Post or search" desc="Request blood or find matching donors nearby." />
-          <Step number="4" title="Connect & donate" desc="Coordinate securely and track donation history." />
-        </div>
-      </div>
-    </section>
   );
 }
 

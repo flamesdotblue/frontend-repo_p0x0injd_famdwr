@@ -6,8 +6,7 @@ export default function Header() {
 
   const navItems = [
     { label: "Home", href: "#home" },
-    { label: "Features", href: "#features" },
-    { label: "How it works", href: "#how" },
+    { label: "Request Blood", href: "#request" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -50,7 +49,7 @@ export default function Header() {
           aria-label="Open Menu"
           className="inline-flex items-center justify-center rounded-lg border border-neutral-200 p-2 md:hidden"
           onClick={() => setOpen((v) => !v)}
-        >
+       >
           <Menu className="h-5 w-5" />
         </button>
       </div>
